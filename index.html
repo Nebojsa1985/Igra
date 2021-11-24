@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start Game</title>
+    
+    <link rel="stylesheet" href="startgame.css" />
+
+  </head>
+  <body>
+    <div>
+      <button>Start Game</button>
+    </div>
+    
+  <script>
+
+    function startGame() {
+      setInterval(function(){ location.href = "game.html"; }, 500);
+    } 
+    
+    const button = document.querySelector('button')
+    button.addEventListener('click' , startGame)
+  
+    </script>
+  </body>    
+</html>
